@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acctech AI - AI-Powered Advertising Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans leading-normal tracking-normal">
+    <!-- Header -->
+    <header class="bg-gray-800 shadow sticky top-0 z-50 w-full">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold">Acctech AI</div>
+        <div class="md:hidden">
+          <button
+            id="hamburger"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <nav
+            id="navMenu"
+            class="fixed inset-0 bg-gray-800 flex flex-col items-center justify-center transform menu-hidden md:relative md:flex-row md:bg-transparent md:items-center md:space-x-4"
+          >
+            <button id="closeMenu" class="absolute top-5 right-5 md:hidden">
+              <svg
+                class="h-8 w-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <a href="#services" class="hover:text-blue-300 text-lg my-2"
+              >Services</a
+            >
+            <a href="#pricing" class="hover:text-blue-300 text-lg my-2"
+              >Pricing</a
+            >
+            <a href="#about" class="hover:text-blue-300 text-lg my-2">About</a>
+            <a href="#contact" class="hover:text-blue-300 text-lg my-2"
+              >Contact</a
+            >
+          </nav>
+        </div>
+
+        <nav id="navMenu" class="hidden md:flex items-center">
+          <a href="#services" class="hover:text-blue-300 mx-4">Services</a>
+          <a href="#pricing" class="hover:text-blue-300 mx-4">Pricing</a>
+          <a href="#about" class="hover:text-blue-300 mx-4">About</a>
+          <a href="#contact" class="hover:text-blue-300 mx-4">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-black parallax text-white py-20 flex justify-center items-center min-h-screen"
+      data-aos="fade-up"
+    >
+      <div class="text-center">
+        <h1 class="text-5xl font-bold">
+          Revolutionize Your Advertising with AI
+        </h1>
+        <a
+          href="#contact"
+          class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 font-semibold rounded hover:bg-blue-400"
+        >
+          Get Started
+        </a>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-900 py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-bold text-white">Our Services</h2>
+          <p class="mt-4 text-gray-300 text-lg">
+            Explore our range of AI-powered advertising solutions designed to
+            elevate your brand.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Service 1 - Image on the Left -->
+          <div
+            class="bg-gray-800 rounded-lg shadow overflow-hidden flex flex-col md:flex-row"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="md:w-1/2 flex justify-center items-center">
+              <img
+                src="https://via.placeholder.com/300x150"
+                alt="AI-Powered Ad Creation"
+                class="services-img object-cover"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 services-content">
+              <h3 class="text-2xl font-bold text-white mb-3">
+                AI-Powered Ad Creation
+              </h3>
+              <p class="text-gray-400 text-base mb-5">
+                Automated creation of ad copy and visuals featuring realistic AI
+                avatars tailored to target audience preferences.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-500 text-white px-6 py-2 font-semibold rounded hover:bg-blue-400 text-sm"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- Service 2 - Image on the Right -->
+          <div
+            class="bg-gray-800 rounded-lg shadow overflow-hidden flex flex-col md:flex-row-reverse"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="md:w-1/2 flex justify-center items-center">
+              <img
+                src="https://via.placeholder.com/300x150"
+                alt="Website/Mobile App Development"
+                class="services-img object-cover"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 services-content">
+              <h3 class="text-2xl font-bold text-white mb-3">
+                Website/Mobile App Development
+              </h3>
+              <p class="text-gray-400 text-base mb-5">
+                Full-spectrum development services from initial design to
+                deployment and maintenance for both websites and mobile
+                applications.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-500 text-white px-6 py-2 font-semibold rounded hover:bg-blue-400 text-sm"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- Service 3 - Image on the Left -->
+          <div
+            class="bg-gray-800 rounded-lg shadow overflow-hidden flex flex-col md:flex-row"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="md:w-1/2 flex justify-center items-center">
+              <img
+                src="https://via.placeholder.com/300x150"
+                alt="Targeted Ad Placement"
+                class="services-img object-cover"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 services-content">
+              <h3 class="text-2xl font-bold text-white mb-3">
+                Targeted Ad Placement
+              </h3>
+              <p class="text-gray-400 text-base mb-5">
+                Use advanced machine learning algorithms for precision targeting
+                to ensure your ads reach the most receptive audience.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-500 text-white px-6 py-2 font-semibold rounded hover:bg-blue-400 text-sm"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section
+      id="pricing"
+      class="bg-gray-700 py-20 flex justify-center items-center min-h-screen"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-6xl font-bold text-white">Pricing Plans</h2>
+          <p class="mt-4 text-gray-300 text-xl">
+            Choose a plan that fits your needs.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Basic Plan -->
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg p-6 text-center pricing-card-container"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <h3 class="text-2xl font-bold text-white mb-5">Basic</h3>
+            <p class="text-gray-400 mb-6">
+              Perfect for small businesses needing basic features.
+            </p>
+            <ul class="text-gray-400 mb-6 text-left">
+              <li>- Basic Ad Campaigns</li>
+              <li>- Email Support</li>
+              <li>- Access to Standard Features</li>
+            </ul>
+            <span class="text-5xl font-bold text-white">$99/month</span>
+            <div class="mt-8">
+              <a
+                href="#"
+                class="bg-blue-500 text-white px-8 py-3 rounded font-semibold hover:bg-blue-400 transition duration-300"
+                >Select Plan</a
+              >
+            </div>
+          </div>
+          <!-- Standard Plan -->
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg p-6 text-center pricing-card-container"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <h3 class="text-2xl font-bold text-white mb-5">Standard</h3>
+            <p class="text-gray-400 mb-6">
+              Ideal for growing businesses that require more features.
+            </p>
+            <ul class="text-gray-400 mb-6 text-left">
+              <li>- Enhanced Ad Campaigns</li>
+              <li>- Priority Email Support</li>
+              <li>- Access to All Core Features</li>
+            </ul>
+            <span class="text-5xl font-bold text-white">$199/month</span>
+            <div class="mt-8">
+              <a
+                href="#"
+                class="bg-blue-500 text-white px-8 py-3 rounded font-semibold hover:bg-blue-400 transition duration-300"
+                >Select Plan</a
+              >
+            </div>
+          </div>
+          <!-- Premium Plan -->
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg p-6 text-center pricing-card-container"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+          >
+            <h3 class="text-2xl font-bold text-white mb-5">Premium</h3>
+            <p class="text-gray-400 mb-6">
+              Perfect for large organizations needing advanced capabilities.
+            </p>
+            <ul class="text-gray-400 mb-6 text-left">
+              <li>- Advanced Ad Campaigns</li>
+              <li>- 24/7 Support</li>
+              <li>- Unlimited Access to All Features</li>
+            </ul>
+            <span class="text-5xl font-bold text-white">$299/month</span>
+            <div class="mt-8">
+              <a
+                href="#"
+                class="bg-blue-500 text-white px-8 py-3 rounded font-semibold hover:bg-blue-400 transition duration-300"
+                >Select Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="bg-gray-900 py-20 flex justify-center items-center min-h-screen"
+      data-aos="fade-up"
+    >
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold">About Acctech AI</h2>
+        <p class="text-gray-400 mt-4">
+          Acctech AI is at the forefront of the AI-powered advertising
+          revolution, offering personalized and effective ad solutions for
+          businesses of all sizes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-gray-700 py-20 flex justify-center items-center min-h-screen"
+      data-aos="fade-up"
+    >
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold">Get in Touch</h2>
+        <p class="text-gray-400 mt-4">
+          Ready to revolutionize your advertising? Contact us today to learn
+          more about our services and how we can help your business grow.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 flex justify-center items-center">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Acctech AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="hidden fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-4 rounded-full z-50"
+      onclick="scrollToTop()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="3"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+        once: false, // Animation will trigger every time the element is in view
+        mirror: true, // Elements animate out while scrolling past them
+        offset: 0, // Adjust the offset to 0 to avoid initial scroll adjustment
+      });
+
+      // Scroll to Top functionality
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Toggle visibility of the back to top button
+      const backToTopButton = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("hidden");
+          backToTopButton.classList.add("block");
+        } else {
+          backToTopButton.classList.remove("block");
+          backToTopButton.classList.add("hidden");
+        }
+      });
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+      const closeMenu = document.getElementById("closeMenu");
+      const navLinks = document.querySelectorAll("#navMenu a"); // Select all navigation links
+
+      // Function to close the navigation menu
+      function closeNav() {
+        navMenu.classList.add("menu-hidden");
+      }
+
+      // Event listener for the hamburger menu
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.remove("menu-hidden");
+        navMenu.style.transition = "transform 0.3s ease-in-out";
+      });
+
+      // Event listener for the close button
+      closeMenu.addEventListener("click", closeNav);
+
+      // Add event listeners to each nav link to close the menu when clicked
+      navLinks.forEach((link) => {
+        link.addEventListener("click", closeNav);
+      });
+    </script>
+  </body>
+</html>
